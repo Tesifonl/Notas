@@ -6,23 +6,23 @@ public class Notas {
 
 public static void main(String[] args) {
 Scanner reader = new Scanner(System.in);// Para pedir un dato numérico por teclado
-int n = 0;
-String c = "";
+int numero = 0; // NOPMD by tesif on 25/2/23 7:18
+String calificacion = ""; // NOPMD by tesif on 25/2/23 7:18
 System.out.print("Introduzca el valor de una calificación: ");
-n = reader.nextInt();
+numero = reader.nextInt();
 
-if (n >= 0 && n < 5)
-c = "Suspenso";
-else if (n >= 5 && n < 7)
-c = "Aprobado";
-else if (n >= 7 && n <9)
-c = "Notable";
-else if (n >= 9 && n <= 10)
-c = "Sobresaliente";
+if (numero >= 0 && numero < 5)
+calificacion = "Suspenso";
+else if (numero >= 5 && numero < 7)
+calificacion = "Aprobado";
+else if (numero >= 7 && numero <9)
+calificacion = "Notable";
+else if (numero >= 9 && numero <= 10)
+calificacion = "Sobresaliente";
 else
-c = "El valor de la calificación introducida no es correcta";
+calificacion = "El valor de la calificación introducida no es correcta";
 
-System.out.println(c);
+System.out.println(calificacion);
 reader.close();
 }
 }
