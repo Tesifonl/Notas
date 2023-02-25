@@ -11,18 +11,28 @@ String calificacion = ""; // NOPMD by tesif on 25/2/23 7:18
 System.out.print("Introduzca el valor de una calificación: ");
 numero = reader.nextInt();
 
-if (numero >= 0 && numero < 5)
-calificacion = "Suspenso";
-else if (numero >= 5 && numero < 7)
-calificacion = "Aprobado";
-else if (numero >= 7 && numero <9)
-calificacion = "Notable";
-else if (numero >= 9 && numero <= 10)
-calificacion = "Sobresaliente";
-else
-calificacion = "El valor de la calificación introducida no es correcta";
+calificacion = cali(numero);
 
 System.out.println(calificacion);
 reader.close();
+}
+
+/**
+ * @param numero introducido
+ * @return la calificacion correspondiente al numero
+ */
+public static String cali(int numero) {
+	String calificacion;
+	if (numero >= 0 && numero < 5)
+	calificacion = "Suspenso";
+	else if (numero >= 5 && numero < 7)
+	calificacion = "Aprobado";
+	else if (numero >= 7 && numero <9)
+	calificacion = "Notable";
+	else if (numero >= 9 && numero <= 10)
+	calificacion = "Sobresaliente";
+	else
+	calificacion = "El valor de la calificación introducida no es correcta";
+	return calificacion;
 }
 }
