@@ -1,4 +1,8 @@
 package notas;
+/**@author Tesifon */
+/**@version Segunda */
+
+/**En esta clase se guarda el metodo Califica que es invocado en la clase NOtas*/
 
 public class Califica {
 
